@@ -10,6 +10,9 @@ class Main_15_Jan{
         // Display addition and subtraction results
         System.out.println("Addition: " + cal.addition());
         System.out.println("Subtraction: " + cal.subtraction());
+        System.out.println("Multiplication: " + cal.multiplication());
+        System.out.println("Division: " + cal.division());
+
 
 	}
 }
