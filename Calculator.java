@@ -14,3 +14,4 @@ class Calculator{
 		return numbers[0] - numbers[1];
 	}
 }
+
