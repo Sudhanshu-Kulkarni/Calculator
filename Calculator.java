@@ -13,5 +13,14 @@ class Calculator{
 	int subtraction(){
 		return numbers[0] - numbers[1];
 	}
+
+	int multiplication(){
+		return numbers[0] * numbers[1];
+	}
+
+	int division(){
+		return numbers[0] / numbers[1];
+	}
+
 }
 
