@@ -25,23 +25,46 @@ The program includes three main classes:
 
 ## Classes and Methods
 
-### `Calculator` Class
-- **Constructor**: Initializes the calculator with an array of two numbers.
-- **addition()**: Adds two numbers.
-- **subtraction()**: Subtracts the second number from the first.
-- **multiplication()**: Multiplies two numbers.
-- **division()**: Divides the first number by the second and handles division by zero.
-- **fibonacci(int n)**: Generates and returns a Fibonacci sequence up to the `n`th term.
-- **sumOfArray(int[] array)**: Returns the sum of the elements in the array.
-- **meanOfArray(int[] array)**: Returns the mean of the elements in the array.
+### Calculator Class
+This class performs arithmetic operations and other mathematical functions.
 
-### `UserInput` Class
-- **userInput()**: Takes two numbers as input from the user.
-- **userInputArray()**: Takes an array of integers as input from the user.
-- **getUserChoice()**: Displays a menu to the user and returns the user's choice of operation.
+- **Constructor: `Calculator(int[] numbers)`**  
+  Initializes the calculator with two numbers (provided as an integer array).
 
-### `Main` Class
-- The main class contains the entry point (`main()` method) where the user interacts with the program. It handles the input, performs calculations based on user choices, and displays the results.
+- **Method: `int addition()`**  
+  Returns the sum of the two numbers stored in the `numbers` array.
+
+- **Method: `int subtraction()`**  
+  Returns the difference between the two numbers stored in the `numbers` array.
+
+- **Method: `int multiplication()`**  
+  Returns the product of the two numbers stored in the `numbers` array.
+
+- **Method: `int division()`**  
+  Returns the quotient of the two numbers stored in the `numbers` array.  
+  If division by zero occurs, it prints a warning and returns 0.
+
+- **Method: `int[] fibonacci(int n)`**  
+  Returns an array containing the Fibonacci sequence up to the `n`th term.
+
+- **Method: `int sumOfArray(int[] array)`**  
+  Returns the sum of all the elements in the provided array.
+
+- **Method: `double meanOfArray(int[] array)`**  
+  Returns the mean (average) of the elements in the provided array.
+
+### UserInput Class
+This class handles user input for the calculator program.
+
+- **Method: `int[] userInput()`**  
+  Prompts the user to input two integers and returns them in an integer array.
+
+- **Method: `int[] userInputArray()`**  
+  Prompts the user to input an array of integers, returning the array.
+
+- **Method: `int getUserChoice()`**  
+  Displays a menu of operations and returns the user's choice.
+
 
 ## How to Run
 
