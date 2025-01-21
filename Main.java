@@ -5,11 +5,11 @@ Batch: AIML B-3
 */
 import java.util.Scanner;
 
-class Main_15_Jan{
+class Main{
 
 		public static void main(String[] args) {
 
-        UserInput input = new UserInput(); // UserInput object
+        UserInput input = new userInput(); // UserInput object
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Welcome to the Calculator Program!");
@@ -18,30 +18,29 @@ class Main_15_Jan{
 
         switch (choice) {
             case 1: // Addition
-                int[] numbers = input.UserInput();
+                int[] numbers = input.userInput();
                 Calculator calculator = new Calculator(numbers);
                 System.out.println("Addition: " + calculator.addition());
                 break;
 
             case 2: // Subtraction
-                numbers = input.UserInput();
+                numbers = input.userInput();
                 calculator = new Calculator(numbers);
                 System.out.println("Subtraction: " + calculator.subtraction());
                 break;
 
             case 3: // Multiplication
-                numbers = input.UserInput();
+                numbers = input.userInput();
                 calculator = new Calculator(numbers);
                 System.out.println("Multiplication: " + calculator.multiplication());
                 break;
 
             case 4: // Division
-                numbers = input.UserInput();
+                numbers = input.userInput();
                 calculator = new Calculator(numbers);
                 System.out.println("Division: " + calculator.division());
                 break;
 
-            case 5: // Fibonacci Sequence
                 System.out.println("Enter the number of terms:");
                 int n = scan.nextInt();
                 calculator = new Calculator(null);
