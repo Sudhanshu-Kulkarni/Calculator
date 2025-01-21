@@ -47,4 +47,12 @@ The program includes three main classes:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/calculator-program.git
+   git clone https://github.com/Sudhanshu-Kulkarni/calculator-program.git
+
+Compile the Java files:
+- javac *.java
+
+Run the Main class:
+- java Main
+
+Follow the prompts in the console to select the desired operation.
