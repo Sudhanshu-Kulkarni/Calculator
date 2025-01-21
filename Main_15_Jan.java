@@ -1,18 +1,70 @@
-class Main_15_Jan{
+/*
+Name: Sudhanshu Shashikant Kulkarni
+PRN: 23070126132
+Batch: AIML B-3
+*/
 
-		public static void main(String args[]){
-		
-		UserInput input = new UserInput();
-        int[] numbers = input.userinput(); 
+class Main{
 
-        Calculator cal = new Calculator(numbers);
+		public static void main(String[] args) {
 
-        // Display addition and subtraction results
-        System.out.println("Addition: " + cal.addition());
-        System.out.println("Subtraction: " + cal.subtraction());
-        System.out.println("Multiplication: " + cal.multiplication());
-        System.out.println("Division: " + cal.division());
+        UserInput input = new UserInput(); // UserInput object
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("Welcome to the Calculator Program!");
+        
+        int choice = input.getUserChoice();
 
-	}
+        switch (choice) {
+            case 1: // Addition
+                int[] numbers = input.userInputNumbers();
+                Calculator calculator = new Calculator(numbers);
+                System.out.println("Addition: " + calculator.addition());
+                break;
+
+            case 2: // Subtraction
+                numbers = input.userInputNumbers();
+                calculator = new Calculator(numbers);
+                System.out.println("Subtraction: " + calculator.subtraction());
+                break;
+
+            case 3: // Multiplication
+                numbers = input.userInputNumbers();
+                calculator = new Calculator(numbers);
+                System.out.println("Multiplication: " + calculator.multiplication());
+                break;
+
+            case 4: // Division
+                numbers = input.userInputNumbers();
+                calculator = new Calculator(numbers);
+                System.out.println("Division: " + calculator.division());
+                break;
+
+            case 5: // Fibonacci Sequence
+                System.out.println("Enter the number of terms:");
+                int n = scan.nextInt();
+                calculator = new Calculator(null);
+                int[] fibonacci = calculator.fibonacci(n);
+                System.out.println("Fibonacci Sequence:");
+                for (int num : fibonacci) {
+                    System.out.print(num + " ");
+                }
+                break;
+
+            case 6: // Sum of Array
+                int[] array = input.userInputArray();
+                calculator = new Calculator(null);
+                System.out.println("Sum of Array: " + calculator.sumOfArray(array));
+                break;
+
+            case 7: // Mean of Array
+                array = input.userInputArray();
+                calculator = new Calculator(null);
+                System.out.println("Mean of Array: " + calculator.meanOfArray(array));
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
 }
