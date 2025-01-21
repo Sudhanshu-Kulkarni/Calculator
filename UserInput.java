@@ -1,7 +1,7 @@
 
 import java.util.*;
 class UserInput{
-	int[] userinput(){
+	int[] UserInput(){
 		Scanner scan = new Scanner(System.in);
 		int[] numbers = new int[2];
 

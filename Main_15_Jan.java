@@ -3,8 +3,9 @@ Name: Sudhanshu Shashikant Kulkarni
 PRN: 23070126132
 Batch: AIML B-3
 */
+import java.util.Scanner;
 
-class Main{
+class Main_15_Jan{
 
 		public static void main(String[] args) {
 
@@ -17,25 +18,25 @@ class Main{
 
         switch (choice) {
             case 1: // Addition
-                int[] numbers = input.userInputNumbers();
+                int[] numbers = input.UserInput();
                 Calculator calculator = new Calculator(numbers);
                 System.out.println("Addition: " + calculator.addition());
                 break;
 
             case 2: // Subtraction
-                numbers = input.userInputNumbers();
+                numbers = input.UserInput();
                 calculator = new Calculator(numbers);
                 System.out.println("Subtraction: " + calculator.subtraction());
                 break;
 
             case 3: // Multiplication
-                numbers = input.userInputNumbers();
+                numbers = input.UserInput();
                 calculator = new Calculator(numbers);
                 System.out.println("Multiplication: " + calculator.multiplication());
                 break;
 
             case 4: // Division
-                numbers = input.userInputNumbers();
+                numbers = input.UserInput();
                 calculator = new Calculator(numbers);
                 System.out.println("Division: " + calculator.division());
                 break;
