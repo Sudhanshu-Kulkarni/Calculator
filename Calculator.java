@@ -19,8 +19,15 @@ class Calculator{
 	}
 
 	int division(){
-		return numbers[0] / numbers[1];
+		if (numbers[1] != 0) {
+            return numbers[0] / numbers[1];
+        } else {
+            System.out.println("Division by zero is not allowed.");
+            return 0;
+        }
 	}
+
+	
 
 }
 
