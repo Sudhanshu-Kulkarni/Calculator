@@ -28,4 +28,20 @@ class UserInput{
 
         return array;
     }
+
+    // Display menu and get user choice
+    int getUserChoice() {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("\nChoose an operation:");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Fibonacci Sequence");
+        System.out.println("6. Sum of Array");
+        System.out.println("7. Mean of Array");
+
+        return scan.nextInt();
+    }
 }
