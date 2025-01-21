@@ -38,5 +38,20 @@ class Calculator{
         return fib;
     }
 
+    // Sum of array
+    int sumOfArray(int[] array) {
+        int sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+        return sum;
+    }
+
+    // Mean of array
+    double meanOfArray(int[] array) {
+        int sum = sumOfArray(array);
+        return (double) sum / array.length;
+    }
+
 }
 
