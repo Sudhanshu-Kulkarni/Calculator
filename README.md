@@ -7,8 +7,7 @@ This repository contains a simple calculator program written in Java. The progra
 - [Features](#features)
 - [Classes and Methods](#classes-and-methods)
 - [How to Run](#how-to-run)
-- [Example Usage](#example-usage)
-- [Contributing](#contributing)
+
 
 ## Overview
 This program allows the user to perform various mathematical operations using a command-line interface. The user is prompted to choose an operation, and based on the choice, the program performs the calculation and displays the result.
